@@ -1,0 +1,79 @@
+# depslib dependency file v1.0
+1669829918 source:c:\users\usuario\desktop\clinica medica\main.c
+	<stdio.h>
+	<stdlib.h>
+	"interface.h"
+
+1669409026 c:\users\usuario\desktop\clinica medica\medico.h
+
+1669830230 source:c:\users\usuario\desktop\clinica medica\medico.c
+	<stdio.h>
+	"medico.h"
+
+1669828676 c:\users\usuario\desktop\clinica medica\paciente.h
+
+1669829866 source:c:\users\usuario\desktop\clinica medica\paciente.c
+	<stdio.h>
+	"paciente.h"
+
+1669826806 source:c:\users\usuario\desktop\clinica medica\consulta.c
+	<stdio.h>
+	"consulta.h"
+
+1669411462 c:\users\usuario\desktop\clinica medica\consulta.h
+
+1669826685 c:\users\usuario\desktop\clinica medica\interface.h
+	<stdio.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+
+1669828421 source:c:\users\usuario\desktop\clinica medica\interface.c
+	"interface.h"
+
+1669982873 source:h:\codigos\clinicamedica\consulta.c
+	<stdio.h>
+	"consulta.h"
+	"interface.h"
+
+1669946474 h:\codigos\clinicamedica\consulta.h
+
+1669938937 source:h:\codigos\clinicamedica\interface.c
+	"interface.h"
+
+1669897187 h:\codigos\clinicamedica\interface.h
+	<stdio.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+
+1669947458 source:h:\codigos\clinicamedica\main.c
+	<stdio.h>
+	<stdlib.h>
+	"interface.h"
+	"medico.h"
+	"paciente.h"
+	"consulta.h"
+	"relatorio.h"
+
+1669982873 source:h:\codigos\clinicamedica\medico.c
+	<stdio.h>
+	"medico.h"
+	"interface.h"
+
+1669946474 h:\codigos\clinicamedica\medico.h
+
+1669982743 source:h:\codigos\clinicamedica\paciente.c
+	<stdio.h>
+	"paciente.h"
+	"interface.h"
+
+1669945304 h:\codigos\clinicamedica\paciente.h
+
+1669983179 source:h:\codigos\clinicamedica\relatorio.c
+	<stdio.h>
+	"relatorio.h"
+	"interface.h"
+
+1669946474 h:\codigos\clinicamedica\relatorio.h
+
