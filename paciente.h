@@ -10,6 +10,7 @@ struct paciente{
 
 typedef struct paciente Paciente;
 Paciente DigitarPaciente();
+void AtivarPaciente();
 void ImprimirPaciente(Paciente P);
 void TeclaPaciente();
 

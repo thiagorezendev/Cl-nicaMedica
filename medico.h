@@ -10,6 +10,7 @@ struct medico{
 
 typedef struct medico Medico;
 Medico DigitarMedico();
+void AtivarMedico();
 void ImprimirMedico(Medico M);
 void TeclaMedico();
 

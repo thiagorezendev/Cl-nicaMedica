@@ -10,6 +10,7 @@ struct relatorio{
 
 typedef struct relatorio Relatorio;
 Relatorio DigitarRelatorio();
+void AtivarRelatorio();
 void ImprimirRelatorio(Relatorio R);
 void TeclaRelatorio();
 

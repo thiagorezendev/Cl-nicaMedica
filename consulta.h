@@ -10,6 +10,7 @@ struct consulta{
 
 typedef struct consulta Consulta;
 Consulta DigitarConsulta();
+void AtivarConsulta();
 void ImprimirConsulta(Consulta C);
 void TeclaConsulta();
 
