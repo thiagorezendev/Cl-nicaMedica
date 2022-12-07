@@ -20,7 +20,7 @@ Medico DigitarMedico(){
     return M;
 }
 
-void TeclaMedico(){
+void TelaMedico(){
     textcoloreback(LIGHT_CYAN, BLACK);
     Borda(14, 3, 52, 18, 1, 1);
     gotoxy(17, 6); printf("     CRM: ");
@@ -55,4 +55,25 @@ void ImprimirMedico(Medico M){
     printf("Telefone:");
     gotoxy(27, 15);
     printf("%s\n", M.Telefone);
+}
+
+void AtivarMedico(){
+    int Escolha = 0;
+    char opcoes[][51] = {"Novo","Pesquisar","Alterar","Sair"};
+    int x[] = {20, 29, 42, 56};
+    int y[] = {19, 19, 19, 19};
+    TelaMedico();
+
+
+    do{
+        Borda(16, 18, 10, 2, 0, 0);
+        Borda(28, 18, 10, 2, 0, 0);
+        Borda(40, 18, 10, 2, 0, 0);
+        Borda(52, 18, 10, 2, 0, 0);
+        Escolha = menu(opcoes, x, y, Escolha, 4);
+        if(Escolha == 0){
+            TelaMedico();
+            DigitarMedico();
+        }
+    }while(Escolha != 3);
 }

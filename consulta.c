@@ -20,7 +20,7 @@ Consulta DigitarConsulta(){
     return C;
 }
 
-void TeclaConsulta(){
+void TelaConsulta(){
     textcoloreback(LIGHT_CYAN, BLACK);
     Borda(14, 3, 52, 18, 1, 1);
     gotoxy(17, 6); printf("  MEDICO: ");
@@ -55,4 +55,25 @@ void ImprimirConsulta(Consulta C){
     printf("   Hora:");
     gotoxy(27, 15);
     printf("%s\n", C.HoraConsulta);
+}
+
+void AtivarConsulta(){
+    int Escolha = 0;
+    char opcoes[][51] = {"Novo","Pesquisar","Alterar","Sair"};
+    int x[] = {20, 29, 42, 56};
+    int y[] = {19, 19, 19, 19};
+    TelaConsulta();
+
+
+    do{
+        Borda(16, 18, 10, 2, 0, 0);
+        Borda(28, 18, 10, 2, 0, 0);
+        Borda(40, 18, 10, 2, 0, 0);
+        Borda(52, 18, 10, 2, 0, 0);
+        Escolha = menu(opcoes, x, y, Escolha, 4);
+        if(Escolha == 0){
+            TelaConsulta();
+            DigitarConsulta();
+        }
+    }while(Escolha != 3);
 }

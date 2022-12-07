@@ -18,36 +18,21 @@ int y[] = {3, 4, 5, 6, 7};
 int main()
 {
     int escolha = 0;
+    do{
     TelaPrincipal();
-    Medico M; Paciente P; Relatorio R;
     escolha = menu(opcoes, x, y, escolha, 5);
-    if(escolha == 0){
-        TeclaPaciente();
-        P = DigitarPaciente();
-        ImprimirPaciente(P);
-    }
-    if(escolha == 1){
-        TeclaMedico();
-        M = DigitarMedico();
-        ImprimirMedico(M);
-    }
-    /*if(escolha == 2){
-        TeclaConsulta();
-        C = DigitarConsulta();
-        ImprimirConsulta(C);
-    }*/
-    if(escolha == 3){
-        TeclaRelatorio();
-        R = DigitarRelatorio();
-        ImprimirRelatorio(R);
-    }
+    if(escolha == 0)AtivarPaciente();
+    if(escolha == 1)AtivarMedico();
+    if(escolha == 2)AtivarConsulta();
+    if(escolha == 3)AtivarRelatorio();
     if(escolha == 4){
-        textcoloreback(LIGHT_CYAN, BLACK);
         Borda(28, 10, 21, 2, 0, 0);
         gotoxy(29, 11);
         printf("Obrigado pelo acesso!");
+        break;
     }
-    getchar();
+    }while(escolha != -1);
+
 
     gotoxy(1, 24);
     return 0;

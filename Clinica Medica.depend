@@ -77,3 +77,95 @@
 
 1669946474 h:\codigos\clinicamedica\relatorio.h
 
+1670370136 source:h:\codigos\linguagem c\clinicamedica\cl-nicamedica\consulta.c
+	<stdio.h>
+	"consulta.h"
+	"interface.h"
+
+1669946474 h:\codigos\linguagem c\clinicamedica\cl-nicamedica\consulta.h
+
+1669897187 h:\codigos\linguagem c\clinicamedica\cl-nicamedica\interface.h
+	<stdio.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+
+1670369815 source:h:\codigos\linguagem c\clinicamedica\cl-nicamedica\interface.c
+	"interface.h"
+
+1670370136 source:h:\codigos\linguagem c\clinicamedica\cl-nicamedica\main.c
+	<stdio.h>
+	<stdlib.h>
+	"interface.h"
+	"medico.h"
+	"paciente.h"
+	"consulta.h"
+	"relatorio.h"
+
+1669946474 h:\codigos\linguagem c\clinicamedica\cl-nicamedica\medico.h
+
+1669945304 h:\codigos\linguagem c\clinicamedica\cl-nicamedica\paciente.h
+
+1669946474 h:\codigos\linguagem c\clinicamedica\cl-nicamedica\relatorio.h
+
+1670370045 source:h:\codigos\linguagem c\clinicamedica\cl-nicamedica\medico.c
+	<stdio.h>
+	"medico.h"
+	"interface.h"
+
+1670369942 source:h:\codigos\linguagem c\clinicamedica\cl-nicamedica\paciente.c
+	<stdio.h>
+	"paciente.h"
+	"interface.h"
+
+1670370170 source:h:\codigos\linguagem c\clinicamedica\cl-nicamedica\relatorio.c
+	<stdio.h>
+	"relatorio.h"
+	"interface.h"
+
+1670370285 source:h:\codigos\linguagem c\cl-nicamedica\consulta.c
+	<stdio.h>
+	"consulta.h"
+	"interface.h"
+
+1669946474 h:\codigos\linguagem c\cl-nicamedica\consulta.h
+
+1669897187 h:\codigos\linguagem c\cl-nicamedica\interface.h
+	<stdio.h>
+	<conio.h>
+	<string.h>
+	<windows.h>
+
+1670369815 source:h:\codigos\linguagem c\cl-nicamedica\interface.c
+	"interface.h"
+
+1670370136 source:h:\codigos\linguagem c\cl-nicamedica\main.c
+	<stdio.h>
+	<stdlib.h>
+	"interface.h"
+	"medico.h"
+	"paciente.h"
+	"consulta.h"
+	"relatorio.h"
+
+1669946474 h:\codigos\linguagem c\cl-nicamedica\medico.h
+
+1669945304 h:\codigos\linguagem c\cl-nicamedica\paciente.h
+
+1669946474 h:\codigos\linguagem c\cl-nicamedica\relatorio.h
+
+1670370285 source:h:\codigos\linguagem c\cl-nicamedica\medico.c
+	<stdio.h>
+	"medico.h"
+	"interface.h"
+
+1670369942 source:h:\codigos\linguagem c\cl-nicamedica\paciente.c
+	<stdio.h>
+	"paciente.h"
+	"interface.h"
+
+1670370285 source:h:\codigos\linguagem c\cl-nicamedica\relatorio.c
+	<stdio.h>
+	"relatorio.h"
+	"interface.h"
+

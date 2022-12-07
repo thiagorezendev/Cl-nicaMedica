@@ -72,19 +72,19 @@ int getTecla(){
 
 int menu(char opcoes[][51], int x[], int y[], int opcao, int n){
     int i, tecla;
-    textcoloreback(LIGHT_CYAN, BLACK);
+    textcolor(WHITE);
     for(i = 0; i < n; i++){
         gotoxy(x[i], y[i]); printf("%s", opcoes[i]);
     }
     do{
-        textcoloreback(BLACK, LIGHT_CYAN);
+        textcolor(LIGHT_CYAN);
         gotoxy(x[opcao], y[opcao]); printf("%s", opcoes[opcao]);
         tecla = getTecla();
         if(tecla == 13)return opcao;
-        textcoloreback(LIGHT_CYAN, BLACK);
+        textcolor(WHITE);
         gotoxy(x[opcao], y[opcao]); printf("%s", opcoes[opcao]);
-        if(tecla == TEC_BAIXO)opcao++;
-        if(tecla == TEC_CIMA)opcao--;
+        if(tecla == TEC_BAIXO || tecla == TEC_DIR)opcao++;
+        if(tecla == TEC_CIMA || tecla == TEC_ESQ)opcao--;
         if(opcao < 0)opcao = n - 1;
         if(opcao >= n)opcao = 0;
     }while(tecla != 27);
