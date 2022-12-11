@@ -2,6 +2,8 @@
 #include "relatorio.h"
 #include "interface.h"
 
+FILE *fpRelatorio;
+
 Relatorio DigitarRelatorio(){
     Relatorio R;
 
@@ -57,15 +59,42 @@ void ImprimirRelatorio(Relatorio R){
     printf("%s\n", R.Remarcacao);
 }
 
+void AbrirArquivoRelatorio(){
+    fpRelatorio = fopen("Relatorio.txt", "rb+");
+
+    if(fpRelatorio == NULL){
+        fpRelatorio = fopen("Relatorio.txt", "wb+");
+        if(fpRelatorio == NULL){
+            printf("Nao abriu Relatorio.txt\n");
+            exit(1);
+        }
+    }
+}
+
+void FecharArquivoRelatorio(){
+    fclose(fpRelatorio);
+}
+
+void SalvarNovoRelatorio(Relatorio R){
+    fseek(fpRelatorio, 0, SEEK_END);//Posiciona no fim do arquivo
+    fwrite(&R, sizeof(Relatorio), 1, fpRelatorio);//Grava
+    fflush(fpRelatorio);
+}
+
 void AtivarRelatorio(){
+    Relatorio R;
     int Escolha = 0;
     char opcoes[][51] = {"Novo","Pesquisar","Alterar","Sair"};
     int x[] = {20, 29, 42, 56};
     int y[] = {19, 19, 19, 19};
-    TelaRelatorio();
 
+    char opcoesConfirma[][51] = {"Confirma", "Cancela"};
+    int x1[] = {30, 42};
+    int y1[] = {19, 19};
 
+    AbrirArquivoRelatorio();
     do{
+        TelaRelatorio();
         Borda(16, 18, 10, 2, 0, 0);
         Borda(28, 18, 10, 2, 0, 0);
         Borda(40, 18, 10, 2, 0, 0);
@@ -73,7 +102,14 @@ void AtivarRelatorio(){
         Escolha = menu(opcoes, x, y, Escolha, 4);
         if(Escolha == 0){
             TelaRelatorio();
-            DigitarRelatorio();
+            R = DigitarRelatorio();
+            Borda(28, 18, 10, 2, 0, 0);
+            Borda(40, 18, 10, 2, 0, 0);
+            Escolha = menu(opcoesConfirma, x1, y1, Escolha, 2);
+            if(Escolha == 0){
+               SalvarNovoRelatorio(R);
+            }else Escolha = 0;
         }
     }while(Escolha != 3);
+    FecharArquivoRelatorio();
 }
