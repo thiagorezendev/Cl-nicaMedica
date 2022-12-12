@@ -15,7 +15,7 @@ Consulta DigitarConsulta(){
 
     gotoxy(27, 6);
     //scanf(" %[^\n]", C.CRMMedico);
-    Borda(26, 6, 20, 7, 0, 0);
+    Borda(26, 5, 20, 7, 0, 0);
     Escolha = menu(OpcoesMedicos, xMedico, yMedico, Escolha, nMedico);
     TelaConsulta();
     strcpy(C.CRMMedico, OpcoesMedicos[Escolha]);
@@ -23,7 +23,7 @@ Consulta DigitarConsulta(){
 
     gotoxy(27, 9);
     //scanf(" %[^\n]", C.CPFPaciente);
-    Borda(26, 9, 20, 7, 0, 0);
+    Borda(26, 8, 20, 7, 0, 0);
     Escolha = menu(OpcoesPacientes, xPaciente, yPaciente, Escolha, nPaciente);
     TelaConsulta();
     strcpy(C.CPFPaciente, OpcoesPacientes[Escolha]);
